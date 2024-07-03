@@ -2,7 +2,7 @@ var result = 0;
 const prompt = require("prompt-sync")();
 
 function contas(num1, num2) {
-  prompt(`Qual operação deseja realizar entre `+ num1 + ` e ` + num2 + `
+  console.log(`\nQual operação deseja realizar entre `+ num1 + ` e ` + num2 + `
     ADIÇÃO ( + )
     SUBTRAÇÃO( - )
     MULTIPLICAÇÃO( * )
