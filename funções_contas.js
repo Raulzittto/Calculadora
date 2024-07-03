@@ -1,5 +1,16 @@
 var result = 0;
 
+function contas(){
+    console.log(`Qual operação deseja realizar?
+    ADIÇÃO ( + )
+    SUBTRAÇÃO( - )
+    MULTIPLICAÇÃO( * )
+    DIVISÃO( ÷ )
+    PORCENTAGEM( % )`
+        
+    )
+}
+
 function adição(valor1, valor2) {
   result = valor1 + valor2;
   return result;
