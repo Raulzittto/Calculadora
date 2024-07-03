@@ -1,7 +1,7 @@
 var result = 0;
 
-function contas() {
-  console.log(`Qual operação deseja realizar?
+function contas(num1, num2) {
+  console.log(`Qual operação deseja realizar entre `+ num1 + ` e ` + num2 + `
     ADIÇÃO ( + )
     SUBTRAÇÃO( - )
     MULTIPLICAÇÃO( * )
@@ -36,6 +36,7 @@ function porcentagem(valor1, valor2) {
 }
 
 module.exports = {
+  contas,
   adição,
   subtração,
   multiplicação,
@@ -43,4 +44,4 @@ module.exports = {
   porcentagem,
 };
 
-console.log(porcentagem(50, 100));
+
