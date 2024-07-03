@@ -51,29 +51,25 @@ while (!operacoesValidas.includes(escolha_conta)) {
 }
 
 // Realiza a chamada das funções e faz as contas
-switch (escolha_conta) {
+switch (escolha_conta.toLocaleLowerCase) {
   case "+":
   case "adição":
-  case "ADIÇÃO":
     console.log(num1 + " mais " + num2 + " será: ");
     console.log(funcoes.adição(num1, num2));
     break;
   case "-":
   case "subtração":
-  case "SUBTRAÇÃO":
     console.log(num1 + " menos " + num2 + " será: ");
     console.log(funcoes.subtração(num1, num2));
     break;
   case "*":
   case "multiplicação":
-  case "MULTIPLICAÇÃO":
     console.log(num1 + " multiplicado por " + num2 + " será: ");
     console.log(funcoes.multiplicação(num1, num2));
     break;
   case "/":
   case "divisão":
   case "÷":
-  case "DIVISÃO":
     if (num2 == 0) {
       console.log("matematicamente impossível realizar uma divisão por 0");
       break;
@@ -83,8 +79,9 @@ switch (escolha_conta) {
     break;
   case "%":
   case "porcentagem":
-  case "PORCENTAGEM":
     console.log(num1 + "% de " + num2 + " será:");
     console.log(funcoes.porcentagem(num1, num2));
     break;
+    default:
+        console.log("Operação Inválida!")
 }
