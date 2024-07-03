@@ -1,14 +1,12 @@
 var result = 0;
 
-function contas(){
-    console.log(`Qual operação deseja realizar?
+function contas() {
+  console.log(`Qual operação deseja realizar?
     ADIÇÃO ( + )
     SUBTRAÇÃO( - )
     MULTIPLICAÇÃO( * )
     DIVISÃO( ÷ )
-    PORCENTAGEM( % )`
-        
-    )
+    PORCENTAGEM( % )`);
 }
 
 function adição(valor1, valor2) {
@@ -45,5 +43,4 @@ module.exports = {
   porcentagem,
 };
 
-
-console.log(porcentagem( 50, 100))
+console.log(porcentagem(50, 100));
