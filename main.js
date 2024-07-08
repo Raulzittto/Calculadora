@@ -45,13 +45,13 @@ var operacoesValidas = [
   "PORCENTAGEM",
 ];
 
-while (!operacoesValidas.includes(escolha_conta)) {
+while (!operacoesValidas.includes(escolha_conta.toLocaleLowerCase() )) {
   console.log("Digite uma operação válida!");
   escolha_conta = prompt("\nDigite sua resposta: ");
 }
 
 // Realiza a chamada das funções e faz as contas
-switch (escolha_conta.toLocaleLowerCase) {
+switch (escolha_conta.toLocaleLowerCase()) {
   case "+":
   case "adição":
     console.log(num1 + " mais " + num2 + " será: ");
